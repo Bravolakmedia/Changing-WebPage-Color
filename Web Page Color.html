@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+<title>Challenge: A Changing WebPage Color</title>
+<style>
+body {
+background-color:brown
+}
+</style>
+</head>
+<body>
+<h1>Bravolak Foods </h1>
+<div id="info">Information Page</div>
+<button id="newInfo">New Information</button>
+<script>
+const newInfo = document.getElementById('newInfo');
+
+newInfo.addEventListener('click', function onClick(event) {
+  // changing background color
+  document.body.style.backgroundColor = 'blue';
+
+  // to change text color
+  document.body.style.color = 'white';
+});
+</script>
+</body>
+</html>
